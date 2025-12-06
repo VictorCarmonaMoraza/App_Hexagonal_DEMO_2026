@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HexagonalDemo.Application.Ports;
+using HexagonalDemo.Domain.Entities;
+using HexagonalDemo.Infrastructure.Data;
 
 namespace HexagonalDemo.Infrastructure.Repositories
 {
-    internal class ProductRepository
+    public class ProductRepository: IProductRepository
     {
+        public Task<Product?> GetByIdAsync(int id)
+        {
+            var product = FakeDb.Products.FirstOrDefault(p => p.Id == id);
+            return Task.FromResult(product);
+        }
     }
 }
