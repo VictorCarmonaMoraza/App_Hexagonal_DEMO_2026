@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalDemo.Api", "Hexago
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalDemo.Domain", "HexagonalDemo.Domain\HexagonalDemo.Domain.csproj", "{7450A9D6-5EEF-4530-A6D8-A77F8DF6B48A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalDemo.Infrastructure", "HexagonalDemo.Infrastructure\HexagonalDemo.Infrastructure.csproj", "{0B706172-C7EC-4BC5-A4DC-7684966FBC3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{7450A9D6-5EEF-4530-A6D8-A77F8DF6B48A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7450A9D6-5EEF-4530-A6D8-A77F8DF6B48A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7450A9D6-5EEF-4530-A6D8-A77F8DF6B48A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B706172-C7EC-4BC5-A4DC-7684966FBC3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B706172-C7EC-4BC5-A4DC-7684966FBC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B706172-C7EC-4BC5-A4DC-7684966FBC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B706172-C7EC-4BC5-A4DC-7684966FBC3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{11128896-D7F9-4040-AD36-737B05D7301E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{0190AEFF-6238-4FE5-B219-EF6E12827F4C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{7450A9D6-5EEF-4530-A6D8-A77F8DF6B48A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{0B706172-C7EC-4BC5-A4DC-7684966FBC3F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A59536E9-A011-49DF-BFEE-1D274D461D36}
