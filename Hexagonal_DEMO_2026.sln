@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36717.8 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalDemo.Application", "HexagonalDemo.Application\HexagonalDemo.Application.csproj", "{11128896-D7F9-4040-AD36-737B05D7301E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexagonalDemo.Api", "HexagonalDemo.Api\HexagonalDemo.Api.csproj", "{0190AEFF-6238-4FE5-B219-EF6E12827F4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +19,17 @@ Global
 		{11128896-D7F9-4040-AD36-737B05D7301E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11128896-D7F9-4040-AD36-737B05D7301E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11128896-D7F9-4040-AD36-737B05D7301E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0190AEFF-6238-4FE5-B219-EF6E12827F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0190AEFF-6238-4FE5-B219-EF6E12827F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0190AEFF-6238-4FE5-B219-EF6E12827F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0190AEFF-6238-4FE5-B219-EF6E12827F4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{11128896-D7F9-4040-AD36-737B05D7301E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{0190AEFF-6238-4FE5-B219-EF6E12827F4C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A59536E9-A011-49DF-BFEE-1D274D461D36}
