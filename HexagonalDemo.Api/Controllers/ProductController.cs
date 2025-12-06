@@ -24,5 +24,12 @@ namespace HexagonalDemo.Api.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet("allProduct")]
+        public async Task<IActionResult> GetAll()
+        {
+            var result = await _getProductUseCase.getAllProduct();
+            return Ok(result);
+        }
     }
 }

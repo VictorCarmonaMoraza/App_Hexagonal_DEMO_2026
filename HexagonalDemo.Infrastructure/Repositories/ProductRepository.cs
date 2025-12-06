@@ -11,5 +11,11 @@ namespace HexagonalDemo.Infrastructure.Repositories
             var product = FakeDb.Products.FirstOrDefault(p => p.Id == id);
             return Task.FromResult(product);
         }
+
+        public Task<List<Product>> GetAllAsync()
+        {
+            var products = FakeDb.Products.ToList();
+            return Task.FromResult(FakeDb.Products);
+        }
     }
 }

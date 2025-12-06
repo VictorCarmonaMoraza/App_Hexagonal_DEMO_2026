@@ -5,5 +5,7 @@ namespace HexagonalDemo.Application.Ports
     public interface IProductRepository
     {
         Task<Product?> GetByIdAsync(int id);
+
+        Task<List<Product>> GetAllAsync();
     }
 }

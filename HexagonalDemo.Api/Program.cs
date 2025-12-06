@@ -1,4 +1,14 @@
+﻿using HexagonalDemo.Application.Ports;
+using HexagonalDemo.Application.UseCases;
+using HexagonalDemo.Infrastructure.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Inyección de dependencias (puertos → adaptadores)
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+// Casos de uso
+builder.Services.AddScoped<GetProductUseCase>();
 
 // Add services to the container.
 

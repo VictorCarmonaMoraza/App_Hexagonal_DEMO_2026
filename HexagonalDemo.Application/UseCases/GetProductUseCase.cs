@@ -1,5 +1,6 @@
 ﻿using HexagonalDemo.Application.Dtos;
 using HexagonalDemo.Application.Ports;
+using HexagonalDemo.Domain.Entities;
 
 namespace HexagonalDemo.Application.UseCases
 {
@@ -24,5 +25,23 @@ namespace HexagonalDemo.Application.UseCases
                 Name = product.Name
             };
         }
+
+        public async Task<List<ProductDto?>> getAllProduct()
+        {
+            var products = await _repo.GetAllAsync();
+
+            if (products == null || !products.Any())
+                return new List<ProductDto>();
+
+            var result = products.Select(p => new ProductDto
+            {
+                Id = p.Id,
+                Name = p.Name,
+                // agrega más propiedades si las tienes
+            }).ToList();
+
+            return result;
+        }
+            
     }
 }
